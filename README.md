@@ -1,6 +1,8 @@
 ## Welcome to jquery-string-list-input
 
-jQuery widget for string list input.
+jQuery widget for string list input. This is useful for `input`/`textarea` html tags that are supposed to store a list of strings where the order is important. Thus, it uses jqueryui-sortable to allow reordering of the list.
+
+![avr -30-2017 19-46-34](https://cloud.githubusercontent.com/assets/1455367/25566665/cfc7c338-2ddd-11e7-8b73-5be9b67770fe.gif)
 
 ## Installation
 
