@@ -1,0 +1,22 @@
+{
+  "name": "jquery-string-list-input",
+  "description": "jQuery widget for string list input.",
+  "main": "index.js",
+  "authors": [
+    "Guillaume Thomas"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery",
+    "jquery-plugin"
+  ],
+  "homepage": "https://github.com/gtnx/jquery-string-list-input",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "tests"
+  ]
+}
