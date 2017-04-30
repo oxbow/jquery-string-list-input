@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery list string input | Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/jquery-string-list-input.css">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-mobile">
+            Click
+        </div>
+        <ul>
+            <li><a href="#section1">Basic</a></li>
+            <li><a href="#section2">Custom labels</a></li>
+            <li><a href="#section3">Suggestions</a></li>
+            <li><a href="#section4">Custom event</a></li>
+        </ul>
+    </nav>
+    <div class="scroll-status"></div>
+    <section id="section1">
+        <h1>Basic</h1>
+        <p>
+            Click the `Add` button to add a string to the input list.
+
+            The first input should be hidden in practice. It's shown here to see the synchronisation between it the inputs below.
+        </p>
+        <div>
+            <textarea id="textarea-1" data-provide="string-list-input" rows=10 colls=40>[]</textarea>
+        </div>
+    </section>
+    <section id="section2">
+        <h1>Custom labels</h1>
+        <p>
+            Example with custom labels
+        </p>
+        <div>
+            <textarea id="textarea-2" data-provide="string-list-input" rows=10 colls=40>[]</textarea>
+        </div>
+    </section>
+    <section id="section3">
+        <h1>Suggestions</h1>
+        <p>
+            Example with suggestions. Start typing "apple" or "amazon" or "facebook" or "google". Careful, no styling here.
+        </p>
+        <div>
+            <textarea id="textarea-3" data-provide="string-list-input" rows=10 colls=40>[]</textarea>
+        </div>
+    </section>
+    <section id="section4">
+        <h1>Custom events</h1>
+        <p>
+            Example with custom events.
+        </p>
+        <div>
+            <textarea id="textarea-4" data-provide="string-list-input" rows=10 colls=40>[]</textarea>
+        </div>
+    </section>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/1.8.0/jquery.textcomplete.js"></script>
+    <script src="../src/jquery-string-list-input.js"></script>
+    <script>
+    /* global $ */
+    $(document).ready(function() {
+        $('#textarea-1').stringListInput({
+            hide: false,
+        });
+
+        $('#textarea-2').stringListInput({
+            addText: 'I want to add a text',
+            hide: false,
+            labelText: 'My custom text',
+            removeText: 'I want to delete this text',
+        });
+
+        $('#textarea-3').stringListInput({
+            hide: false,
+            suggestions: ['apple', 'facebook', 'google', 'amazon'],
+        });
+
+        $('#textarea-4').stringListInput({
+            hide: false,
+            onUpdate: function(items) {
+                alert(JSON.stringify(items));
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## Welcome to jquery-string-list-input
 
-You can use the [editor on GitHub](https://github.com/gtnx/jquery-string-list-input/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+jQuery widget for string list input.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
+Using Bower:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+bower install jquery-string-list-input
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Using NPM:
 
-### Jekyll Themes
+```
+npm install jquery-string-list-input
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gtnx/jquery-string-list-input/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Or simply copy bootstrap-duration-picker.css and bootstrap-duration-picker.js files to your project.
 
-### Support or Contact
+## Example
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Reference
+
+## Dependencies
+
+- jquery
+- jquery-ui
+- [jquery-textcomplete](https://github.com/yuku-t/jquery-textcomplete) (optional)
+
+## Usage
+
+## License
+
+Please see [LICENSE](LICENSE) for licensing details.
