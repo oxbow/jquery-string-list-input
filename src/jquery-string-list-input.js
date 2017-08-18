@@ -48,14 +48,14 @@
                 const _ = settings._;
                 $(`#${prefix}-items-${idx1}`).append(`
                     <div id="${id_item}" class="form-group ${prefix}-item">
-                        <label class="control-label requiredField">
-                            <i class="fa fa-bars"></i>
-                            <span>${_(settings.labelText)}</span>
-                            <button class="btn btn-xs btn-danger ${prefix}-delete" for="${idx2}">${_(settings.removeText)}</button>
-                        </label>
                         <div class="controls">
                             <input id="${id_input}" class="form-control textinput textInput form-control" value="${input || ''}" type="text"/>
                         </div>
+                        <label class="control-label requiredField">
+                            <span>${_(settings.labelText)}</span>
+                            <button class="btn btn-xs btn-danger ${prefix}-delete" for="${idx2}"><i class="fa fa-delete"></i> ${_(settings.removeText)}</button>
+                        </label>
+
                     </div>
                 `);
                 $(`#${id_item} button.${prefix}-delete`).click(function(ev) {
